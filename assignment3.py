@@ -1,5 +1,5 @@
 # PROGRAM RainfallStatistics
-# Create a dictionary, iterate through months 1 to 12 and assign values to correspond to each month.
+# Create a dictionary, iterate through months 1 to 12 and assign values that correspond to each month.
 #     MonthlyDict = {}
 #     for x in range(1,13)
 #         MonthlyDict[x] = user_input
@@ -7,6 +7,7 @@
 # Then find the sum of all the values, iterate and find the average of the values, and use the max and min functions
 #       PRINT SUM(MonthlyDict.values)
 #       PRINT SUM(MonthlyDict.values)/LEN(MonthlyDict)
+# 
 #       PRINT MAX(MonthlyDict.values) + MAX(MonthlyDict, key = MonthlyDict.get)
 #       repeat for MIN
 #    END
@@ -29,7 +30,7 @@ print("Total Annual Rainfall: {}".format(total_rain))
 average_rain = total_rain/len(monthly_dict)
 print("Average Monthly Rainfall: {}".format(average_rain))
  
-#  Max and Min Rainfall
+# Max and Min Rainfall
 max_rain = max(monthly_dict.values())
 max_rain_month = max(monthly_dict, key=monthly_dict.get)
 min_rain = min(monthly_dict.values())
